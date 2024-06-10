@@ -1,10 +1,10 @@
 import { View, Text, StyleSheet } from "react-native";
 import React from "react";
 
-const index = () => {
+const bookmark = () => {
   return (
     <View style={StyleSheet.container}>
-      <Text>index</Text>
+      <Text>booo</Text>
     </View>
   );
 };
@@ -16,4 +16,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default index;
+export default bookmark;

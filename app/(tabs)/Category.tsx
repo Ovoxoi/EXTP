@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet } from "react-native";
 import React from "react";
 
-const index = () => {
+const category = () => {
   return (
     <View style={StyleSheet.container}>
       <Text>index</Text>
@@ -16,4 +16,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default index;
+export default category;
