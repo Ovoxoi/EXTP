@@ -16,6 +16,7 @@ const CategoryButton = () => {
       <Text style={Styles.title}>Categories</Text>
       <ScrollView
         horizontal
+        showsHorizontalScrollIndicator={false}
         contentContainerStyle={{
           gap: 20,
           paddingVertical: 10,
@@ -29,7 +30,7 @@ const CategoryButton = () => {
               size={20}
               color={colors.black}
             />
-            <Text>{item.title} </Text>
+            <Text style={Styles.categoryBtnTxt}>{item.title} </Text>
           </TouchableOpacity>
         ))}
       </ScrollView>
@@ -53,6 +54,10 @@ const Styles = StyleSheet.create({
     shadowOffset: { width: 1, height: 2 },
     shadowOpacity: 0.1,
     shadowRadius: 3,
+  },
+  categoryBtnTxt: {
+    marginLeft: 5,
+    color: colors.black,
   },
 });
 
