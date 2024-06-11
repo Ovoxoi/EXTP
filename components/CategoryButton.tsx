@@ -5,12 +5,13 @@ import {
   ScrollView,
   TouchableOpacity,
 } from "react-native";
-import React from "react";
+import React, { useRef } from "react";
 import colors from "@/constants/colors";
 import destinationCategories from "@/data/categories";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 const CategoryButton = () => {
+  const itemRef = useRef<TouchableOpacity[] | null[]>([]);
   return (
     <View>
       <Text style={Styles.title}>Categories</Text>
@@ -24,7 +25,12 @@ const CategoryButton = () => {
         }}
       >
         {destinationCategories.map((item, index) => (
-          <TouchableOpacity onPress={() => {}} style={Styles.categoryBtn}>
+          <TouchableOpacity
+            key={index}
+            ref={(el) => itemRef.current[index] == el}
+            onPress={() => {}}
+            style={Styles.categoryBtn}
+          >
             <MaterialCommunityIcons
               name={item.iconName as any}
               size={20}
