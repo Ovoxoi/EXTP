@@ -1,7 +1,7 @@
 import { View, Text } from "react-native";
 import React from "react";
 import { Tabs } from "expo-router";
-import index from ".";
+import index from "./page";
 import { FontAwesome, Ionicons, MaterialIcons } from "@expo/vector-icons";
 import colors from "@/constants/colors";
 
@@ -15,11 +15,12 @@ export default function layout() {
           padding: 0,
         },
         tabBarShowLabel: false,
-        tabBarActiveTintColor:
+        tabBarActiveTintColor: colors.black,
+        tabBarInactiveTintColor: "#999",
       }}
     >
       <Tabs.Screen
-        name="index"
+        name="page"
         options={{
           tabBarIcon: ({ color }) => (
             <Ionicons name="compass" size={28} color={color} />
@@ -38,7 +39,17 @@ export default function layout() {
         name="search"
         options={{
           tabBarIcon: ({ color }) => (
-            <Ionicons name="search" size={28} color={color} />
+            <View
+              style={{
+                backgroundColor: colors.primaryColor,
+                paddingHorizontal: 16,
+                paddingVertical: 12,
+                borderRadius: 20,
+                height: 50,
+              }}
+            >
+              <Ionicons name="search-outline" size={24} color={colors.white} />
+            </View>
           ),
         }}
       />
@@ -50,6 +61,7 @@ export default function layout() {
           ),
         }}
       />
+
       <Tabs.Screen
         name="profile"
         options={{

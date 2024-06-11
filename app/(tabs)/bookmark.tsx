@@ -4,7 +4,7 @@ import React from "react";
 const bookmark = () => {
   return (
     <View style={StyleSheet.container}>
-      <Text>booo</Text>
+      <Text>bookmark</Text>
     </View>
   );
 };

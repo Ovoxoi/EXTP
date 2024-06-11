@@ -4,7 +4,7 @@ import React from "react";
 const category = () => {
   return (
     <View style={StyleSheet.container}>
-      <Text>index</Text>
+      <Text>category</Text>
     </View>
   );
 };

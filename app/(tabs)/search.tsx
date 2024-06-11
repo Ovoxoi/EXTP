@@ -4,7 +4,7 @@ import React from "react";
 const search = () => {
   return (
     <View style={StyleSheet.container}>
-      <Text>index</Text>
+      <Text>search</Text>
     </View>
   );
 };

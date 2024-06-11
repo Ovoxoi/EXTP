@@ -4,7 +4,7 @@ import React from "react";
 const profile = () => {
   return (
     <View style={StyleSheet.container}>
-      <Text>index</Text>
+      <Text>profile</Text>
     </View>
   );
 };
