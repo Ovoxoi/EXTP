@@ -1,7 +1,7 @@
 import { View, Text } from "react-native";
 import React from "react";
 import { Tabs } from "expo-router";
-import index from "./page";
+import index from ".";
 import { FontAwesome, Ionicons, MaterialIcons } from "@expo/vector-icons";
 import colors from "@/constants/colors";
 
@@ -20,7 +20,7 @@ export default function layout() {
       }}
     >
       <Tabs.Screen
-        name="page"
+        name="index"
         options={{
           tabBarIcon: ({ color }) => (
             <Ionicons name="compass" size={28} color={color} />

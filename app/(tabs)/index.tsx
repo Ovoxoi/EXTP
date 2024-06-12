@@ -7,7 +7,7 @@ import {
   TextInput,
   TouchableHighlight,
 } from "react-native";
-import React from "react";
+import React, { useState } from "react";
 import { Stack } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import colors from "@/constants/colors";
@@ -15,8 +15,15 @@ import { useHeaderHeight } from "@react-navigation/elements";
 import search from "./search";
 import CategoryButton from "@/components/CategoryButton";
 
-const page = () => {
+const index = () => {
   const headerheight = useHeaderHeight();
+  const [categor, setCategory] = useState("All");
+
+  const onCatChanged = (category: string) => {
+    console.log("Category:", category);
+    setCategory(category);
+  };
+
   return (
     <>
       <Stack.Screen
@@ -70,7 +77,7 @@ const page = () => {
           </TouchableHighlight>
         </View>
 
-        <CategoryButton />
+        <CategoryButton onCategoryChanged={onCatChanged} />
       </View>
     </>
   );
@@ -106,4 +113,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default page;
+export default index;

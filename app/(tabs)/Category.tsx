@@ -3,7 +3,7 @@ import React from "react";
 
 const category = () => {
   return (
-    <View style={StyleSheet.container}>
+    <View style={styles.container}>
       <Text>category</Text>
     </View>
   );
