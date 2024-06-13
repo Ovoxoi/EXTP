@@ -1,0 +1,79 @@
+[
+  {
+    "id": "1",
+    "name": "John",
+    "image": "",
+    "description": "This is a description of John",
+    "rating": "4.5",
+    "price": "158",
+    "duration": "3",
+    "location": "Pacific Ocean",
+    "category": "Beaches"
+  },
+  {
+    "id": "2",
+    "name": "John",
+    "image": "",
+    "description": "This is a description of John",
+    "rating": "4.5",
+    "price": "10.99",
+    "duration": "3",
+    "location": "Pacific Ocean",
+    "category": "Beaches"
+  },
+  {
+    "id": "3",
+    "name": "John",
+    "image": "",
+    "description": "This is a description of John",
+    "rating": "4.5",
+    "price": "10.99",
+    "duration": "3",
+    "location": "Pacific Ocean",
+    "category": "Beaches"
+  },
+  {
+    "id": "4",
+    "name": "John",
+    "image": "",
+    "description": "This is a description of John",
+    "rating": "4.5",
+    "price": "10.99",
+    "duration": "3",
+    "location": "Pacific Ocean",
+    "category": "Beaches"
+  },
+  {
+    "id": "5",
+    "name": "John",
+    "image": "",
+    "description": "This is a description of John",
+    "rating": "4.5",
+    "price": "10.99",
+    "duration": "3",
+    "location": "Pacific Ocean",
+    "category": "Beaches"
+  },
+  {
+    "id": "6",
+    "name": "John",
+    "image": "",
+    "description": "This is a description of John",
+    "rating": "4.5",
+    "price": "10.99",
+    "duration": "3",
+    "location": "Pacific Ocean",
+    "category": "Beaches"
+  },
+  {
+    "id": "7",
+    "name": "John",
+    "image": "",
+    "description": "This is a description of John",
+    "rating": "4.5",
+    "price": "10.99",
+    "duration": "3",
+    "location": "Pacific Ocean",
+    "category": "Beaches"
+  }
+]

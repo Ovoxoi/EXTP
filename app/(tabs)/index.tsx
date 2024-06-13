@@ -14,6 +14,8 @@ import colors from "@/constants/colors";
 import { useHeaderHeight } from "@react-navigation/elements";
 import search from "./search";
 import CategoryButton from "@/components/CategoryButton";
+import Listings from "@/components/Listings";
+import listingData from "@/data/destinations.json";
 
 const index = () => {
   const headerheight = useHeaderHeight();
@@ -78,6 +80,7 @@ const index = () => {
         </View>
 
         <CategoryButton onCategoryChanged={onCatChanged} />
+        <Listings Listings={listingData} />
       </View>
     </>
   );
